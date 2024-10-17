@@ -2,7 +2,7 @@ function updatePrice() {
 
 
     let n = document.getElementById("quantity").value;
-    let pattern = n.match(/^(0|([1-9]\d*))$/);
+    let pattern = n.match(/^(([1-9]\d*))$/);
     if (pattern === null) {
         alert("Неверный формат ввода! Введите натуральное число");
     }

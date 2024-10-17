@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculate.js" defer></script>
+</head>
+<body>
+    
+    <header><h1>Расчет стоимости заказа</h1></header>
+    <fieldset>
+        <legend>Введите данные</legend>
+
+        <div>
+            <label for="quantity">Количество товаров</label>
+            <div class="text"><input type="text" id="quantity" value="" placeholder="Введите число"></div>
+        </div>
+
+        <div>
+            <label for="goods">Тип товара</label>
+            <select id="goods">
+                <option value="1">Anker Soundcore Liberty 3 Pro</option>
+                <option value="2">Apple AirPods Pro 2</option>
+                <option value="3">Huawei Freebuds 5i</option>
+                <option value="4">Samsung  Galaxy Buds 3 Pro</option>
+                <option value="5">Marshall Major IV</option>
+                <option value="6">Honor Choice Earbuds X5 Pro</option>
+                <option value="7">Sony WH-1000XM4</option>
+                <option value="8">AKG K72</option>
+            </select>
+        </div>
+
+        <div id="color">
+            <label for="colorSelect">Цвет товара</label>
+            <select id="colorSelect">
+                <option value="black">Черный</option>
+                <option value="white">Белый</option>
+                <option value="violet">Фиолетовый</option>
+                <option value="green">Зеленый</option>
+            </select>
+        </div>
+
+        <div id="dops">
+            <label for="checkbox">Дополнительные опции</label>
+            <div>
+                <label><input type="checkbox" name="earPads">Набор разных амбушюров</label>
+                <label><input type="checkbox" name="warranty">Двойная гарантия</label>
+                <label><input type="checkbox" name="charger">Зарядное устройство</label>
+                <label><input type="checkbox" name="case">Чехол</label>
+            </div>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend id="service">Выберите вид доставки</legend>
+
+        <div id="deliveryType">
+            <label><input type="radio" name="delivery" value="pickup">Самовывоз</label>
+            <label><input type="radio" name="delivery" value="courier">Курьером</label>
+            <label><input type="radio" name="delivery" value="mail">Почта России</label>
+            <label><input type="radio" name="delivery" value="sdek">СДЭК</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Стоимость заказа</legend>
+
+        <p id="result"></p>
+    </fieldset>
+</body>
+</html>
